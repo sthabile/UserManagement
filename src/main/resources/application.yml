@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  sql:
+    init:
+      platform: postgres
+      mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://postgres:5432/<dbname>?ApplicationName=<appname>
+    username: <username>
+    password: <password>
